@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book List App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Book List</h1>
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search by title or author..."
+        autocomplete="off"
+      />
+
+      
+<select id="category-select" aria-label="Choose book category">
+  <option value="fiction">Fiction</option>
+  <option value="fantasy">Fantasy</option>
+  <option value="science">Science</option>
+  <option value="history">History</option>
+  <option value="romance">Romance</option>
+  <option value="mystery">Mystery</option>
+</select>
+      
+      <div id="options">
+        <button id="toggle-favorites">Show Favorites Only</button>
+        <button id="clear-favorites">Clear Favorites</button>
+        <select id="sort-select">
+          <option value="">Sort By</option>
+          <option value="title">Title (A–Z)</option>
+          <option value="author">Author (A–Z)</option>
+        </select>
+      </div>
+    </header>
+    <main>
+      <div id="book-container">
+        <!-- Book cards will be inserted here by JavaScript -->
+      </div>
+    </main>
+
+    <!-- <script src="books.js"></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>
